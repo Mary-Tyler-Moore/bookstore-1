@@ -1,6 +1,6 @@
 # konyv-vedd
 
-A node.js bookstore. It fetches Google's Book API, uses MongoDB for local storage.
+A node.js bookstore. It fetches Google's Books API and uses MongoDB for local storage. The shop has the basic CRUD functions and I'm working on adding some exciting, personalization stuff down the line.
 
 
 ## The dashboard
