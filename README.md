@@ -5,5 +5,5 @@ A node.js bookstore. It fetches Google's Book API, uses MongoDB for local storag
 
 ## Screenshot
 
-![](/screenshots/2.pmg)
+![](/screenshots/2.png)
 ![](/screenshots/1.png)
