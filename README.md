@@ -6,8 +6,10 @@ It is of course responsive and was developed to be mobile friendly.
 
 ## Screenshots
 
+#### Searching
+
 ![](/screenshots/search.png)
 
-### Checking out
+#### Checking out
 
 ![](/screenshots/checkout.png)
