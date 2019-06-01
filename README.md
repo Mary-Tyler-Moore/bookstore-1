@@ -1,6 +1,8 @@
 # bookstore
 
-This is a fresh looking node.js bookstore. It fetches Google's Books API and uses MongoDB for local storage. The shop has the basic CRUD functions and I'm working on adding some exciting, personalization stuff down the line. It is of course responsive and was developed to be  mobile friendly.
+This is a fresh looking node.js bookstore. It fetches Google's Books API and uses MongoDB for local storage. The shop has all the functions you'd expect from a bookstore and I'm working on adding some exciting, personalization stuff later on. 
+
+It is of course responsive and was developed to be mobile friendly.
 
 ## Screenshots
 
