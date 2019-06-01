@@ -9,30 +9,33 @@
     <ul>
       <li class="subhead">MENU</li>
       <li>
-        <a class="nav scrolltoview" href="/search"><span class="icon"><i class="fas fa-search"></i></span>Search</a>
+        <a class="nav <%= typeof active !== undefined && active == 'search' ? 'current' : '' %>" href="/search"><span
+            class="icon"><i class="fas fa-search"></i></span>Search</a>
       </li>
       <li>
-        <a class="nav scrolltoview" href=""><span class="icon"><i class="fas fa-sign-in-alt"></i></span>Login</a>
+        <a class="nav <%= active == 'login' ? 'current' : '' %>" href=""><span class="icon"><i
+              class="fas fa-sign-in-alt"></i></span>Login</a>
       </li>
       <li>
-        <a class="nav scrolltoview" href="/favorites"><span class="icon"><i
+        <a class="nav <%= active == 'favorites' ? 'current' : '' %>" href="/favorites"><span class="icon"><i
               class="fas fa-heart"></i></span>Favorites</a>
       </li>
       <li>
-        <a class="nav scrolltoview" href="/cart"><span class="icon"><i class="fas fa-shopping-cart"></i></span>Cart</a>
+        <a class="nav <%= active == 'cart' ? 'current' : '' %>" href="/cart"><span class="icon"><i
+              class="fas fa-shopping-cart"></i></span>Cart</a>
       </li>
       <li class="subhead">CATEGORIES</li>
       <li>
-        <a class="nav scrolltoview" href="">Sci-fi</a>
+        <a class="nav " href="">Sci-fi</a>
       </li>
       <li>
-        <a class="nav scrolltoview" href="">Sports</a>
+        <a class="nav " href="">Sports</a>
       </li>
       <li>
-        <a class="nav scrolltoview" href="">Electronics</a>
+        <a class="nav " href="">Electronics</a>
       </li>
       <li>
-        <a class="nav scrolltoview" href="">Programming</a>
+        <a class="nav " href="">Programming</a>
       </li>
     </ul>
   </nav>

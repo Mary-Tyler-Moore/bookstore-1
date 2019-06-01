@@ -288,6 +288,27 @@ a {
   color: #ff9090;
 }
 
+.quantity {
+  border-color: transparent;
+  background-color: #dfdfdf;
+}
+
+.quantity:hover {
+  border-color: transparent;
+  background-color: #dfdfdf;
+}
+
+.plusminus {
+  border-color: #eeeeee;
+  background-color: #ebebeb;
+}
+
+.plusminus:hover {
+  border-color: #dfdfdf;
+  background-color: #dfdfdf;
+}
+
+
 @-webkit-keyframes appear {
   from {
     opacity: 0;

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <script src="https://kit.fontawesome.com/3a955dd35d.js"></script>
-  <link rel="stylesheet" href="/css/favorites.css" />
-  <title>bookstore</title>
-</head>
+<%- include('header') -%>
 
 <% 
 function getRandomGradient() {
@@ -24,7 +14,7 @@ function getRandomGradient() {
 
 <body>
   <div class="wrapper">
-    <%- include('sidebar') -%>
+    <%- include('sidebar', {active: 'favorites'}) -%>
     <article>
       <section class="results">
         <div class="books">
@@ -63,4 +53,4 @@ function getRandomGradient() {
   <script></script>
 </body>
 
-</html>
+<%- include('footer') -%>
