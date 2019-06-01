@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/3a955dd35d.js"></script>
+    <link rel="stylesheet" href="/css/favorites.css" />
+    <title>Könyv-vedd</title>
+  </head>
+
+<% 
+function getRandomGradient() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    color += '40';
+    return`background: linear-gradient(${color}, rgba(0, 0, 0, 0))`;
+} 
+%>
+
+  <body>
+    <div class="wrapper">
+      <%- include('sidebar') -%>
+      <article>
+        <section class="results">
+          <div class="books">
+            <% if(typeof konyvek !== 'undefined') { %> <% konyvek.forEach((konyv) => {%>
+            <div class="book" style="<%= getRandomGradient() %>">
+              <span class="gutter">
+                <span class="thumbnail-wrapper">
+                  <img class="thumbnail" src="<%= konyv.thumbnail %>" alt="thumbnail" />
+                </span>
+                <div class="book-info">
+                  <h3 class="book-info_title">
+                    <%= konyv.title %>
+                  </h3>
+                  <div class="book-info_authors">
+                    <%= konyv.authors %>
+                  </div>
+                  <div class="book-info_category">
+                    (&nbsp;<%= konyv.categories %>&nbsp;)
+                  </div>
+                </div>
+              </span>
+              <span class="btns">
+                <a class="btn fav" href="/favorites/del/<%= konyv._bookid %>"><i class="fas fa-trash"></i>&nbsp;&nbsp;Törlés</a>
+                <% if(!konyv._cartedQuantity > 0) {%>
+                <a href="/cart/add/<%= konyv._bookid %>" class="btn buy"><i class="fas fa-cart-plus"></i>&nbsp;&nbsp;Kosárba</a>
+                <% }%>
+              </span>
+            </div>
+            <% })%> <% } %>
+          </div>
+        </section>
+      </article>
+    </div>
+    <script></script>
+  </body>
+</html>
