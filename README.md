@@ -5,8 +5,8 @@ A fresh looking node.js bookstore. It fetches Google's Books API and uses MongoD
 
 ## The dashboard
 
-![](/screenshots/2.png)
+![](/screenshots/search.png)
 
 ## Checking out
 
-![](/screenshots/1.png)
+![](/screenshots/checkout.png)
